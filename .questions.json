@@ -1,0 +1,22 @@
+[
+  {
+    "name": "__PROJECTNAME__",
+    "message": "Enter your new workspace name",
+    "required": true
+  },
+  {
+    "name": "__USERNAME__",
+    "message": "Enter your github username",
+    "required": true
+  },
+  {
+    "name": "__USERFULLNAME__",
+    "message": "Enter author full name",
+    "required": true
+  },
+  {
+    "name": "__USEREMAIL__",
+    "message": "Enter author email",
+    "required": true
+  }
+]
