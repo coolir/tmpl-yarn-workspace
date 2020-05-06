@@ -8,8 +8,9 @@
   "scripts": {
     "commit": "git-cz",
     "build": "lerna run prepare --parallel",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
     "pretest": "yarn lint",
     "test:watch": "jest --watch",
     "test": "jest"
@@ -30,7 +31,7 @@
     "@pyramation/babel-preset-env": "0.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.3",
-    "babel-jest": "25.1.0",
+    "babel-jest": "^24.9.0",
     "commitizen": "4.0.3",
     "commitlint": "8.3.5",
     "cz-conventional-changelog": "3.1.0",
@@ -44,7 +45,7 @@
     "jest": "25.1.0",
     "lerna": "3.20.2",
     "lint-staged": "10.0.7",
-    "prettier": "^1.19.1"
+    "prettier": "2.0.4"
   },
   "husky": {
     "hooks": {
